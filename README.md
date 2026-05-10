@@ -1,11 +1,27 @@
-# flask_starter
-Starter code for a new Flask Application
+# Property Renting Web Application
 
-Remember to always create a virtual environment and install the packages in your requirements file
+> A property listing and contact platform for prospective renters.
 
+Built for **INFO3180 — Web Programming II** at the University of the West Indies, Mona.
+
+## Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript / jQuery
+- **Backend:** Python (Flask), Flask-WTF, server-side rendering
+- **Database:** PostgreSQL · SQLAlchemy ORM
+
+## Features
+- Browse property listings with images and details
+- Add new properties with file upload (image)
+- View property details with full descriptions
+- Contact landlord form for inquiries
+- Form validation (Flask-WTF) and CSRF protection
+
+## Run Locally
 ```bash
-$ python -m venv venv (you may need to use python3 instead)
-$ source venv/bin/activate (or .\venv\Scripts\activate on Windows)
-$ pip install -r requirements.txt
-$ flask --app app --debug run
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+flask db upgrade
+flask run
 ```
+
+Built by [Josiah-John Green](https://github.com/j0hnc0d3s) — Software Engineering, UWI Mona '26.
